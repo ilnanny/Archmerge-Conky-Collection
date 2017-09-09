@@ -2,8 +2,8 @@
 
 Updated on 
 
-Date    : 17/07/2017
-Version : v2.5.1
+Date    : 09/09/2017
+Version : v3.0.0
 
 Destination : 
 
