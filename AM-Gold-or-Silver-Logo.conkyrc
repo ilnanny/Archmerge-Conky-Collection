@@ -133,6 +133,6 @@ conky.config = {
 };
 
 conky.text = [[
-${image $HOME/.config/conky/images/al2.png -s 200x200}
-#${image $HOME/.config/conky/images/al1.png -s 200x200}
+${image $HOME/.config/conky/images/archmerge.png -s 200x200}
+#${image $HOME/.config/conky/images/archmerge.png -s 200x200}
 ]];

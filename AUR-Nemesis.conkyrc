@@ -136,7 +136,7 @@ conky.config = {
 
 
 conky.text = [[
-${image ~/.config/conky/images/archmerge-100x100.png -p 170,0 -s 50x50}
+${image ~/.config/conky/images/archmerge-white-100x100.png -p 170,0 -s 50x50}
 ${color1}${font SourceSansPro-ExtraLight:size=18:weight:bold}${color2}${execi 6000 lsb_release -d | grep 'Descr'|awk {'print $2 " " $3" " $4" " $5'}}
 ${color1}${hr 2}
 ${voffset -10}${color1}${font SourceSansPro-ExtraLight:size=10:weight:bold:italic}${color6}$sysname $kernel ${alignr}${execi 6000 lsb_release -a | grep 'Release'|awk {'print $2""$3""$4""$5'}}${color}
@@ -171,6 +171,6 @@ ${offset 30}${color1}${top_mem name 6}${alignr}${alignr}${color6}${top_mem mem 6
 ${offset 0}${color1}${color1}Memory used${alignr}${color6}${mem}
 ${offset 0}${color1}Total Memory${alignr}${color6}${memmax}
 ${color1}${hr 2}
-${alignc}A R C H L A B S   N E M E S I S
+${alignc}A R C H M E R G E   N E M E S I S
 ${color1}${hr 2}
 ]]

@@ -68,8 +68,8 @@ conky.config = {
 	gap_x = 0,									-- pixels between right or left border
 	gap_y = 0,									-- pixels between bottom or left border
 	minimum_height = 200,						-- minimum height of window
-	minimum_width = 1000,						-- minimum height of window
-	maximum_width = 1000,						-- maximum height of window
+	minimum_width = 500,						-- minimum height of window
+	maximum_width = 600,						-- maximum height of window
 
 	--Graphical
 
@@ -143,7 +143,7 @@ conky.config = {
 conky.text = [[
 #${color1}${font Inked out:size=18:regular}       ArchMerge${font}
 #${color2}${font Inked out:size=16:regular}    ArchMerge ${font}
-${color1}${font Bootcamp:size=100:regular}   ArchMerge   ${font}
+${color1}${font Bootcamp:size=100:regular}ArchMerge   ${font}
 #${color1}${font Quantify:size=80:regular}   ArchMerge${font}
 #${color1}${font Stya:size=55:regular}         ArchMerge  ${font}
 #${color1}${font Space Age:size=55:regular}  ArchMerge  ${font}

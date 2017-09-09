@@ -59,9 +59,9 @@ conky.config = {
 	--gap_x = -1910,
 	gap_x = 0,									-- pixels between right or left border
 	gap_y = 0,									-- pixels between bottom or left border
-	minimum_height = 330,						-- minimum height of window
-	minimum_width = 520,						-- minimum height of window
-	maximum_width = 520,						-- maximum height of window
+	minimum_height = 300,						-- minimum height of window
+	minimum_width = 300,						-- minimum height of window
+	maximum_width = 300,						-- maximum height of window
 
 	--Graphical
 
@@ -133,6 +133,6 @@ conky.config = {
 };
 
 conky.text = [[
-${image $HOME/.config/conky/images/r2d2-logo.png -s 508x324}
-#${image $HOME/.config/conky/images/yoda-logo.png -s 477x314}
+#${image $HOME/.config/conky/images/archmerge.png -s 300x300}
+${image $HOME/.config/conky/images/archmerge-white-300x300.png -s 300x300}
 ]];

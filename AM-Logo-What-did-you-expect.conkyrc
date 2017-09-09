@@ -142,8 +142,11 @@ conky.config = {
 };
 
 conky.text = [[
-#${image $HOME/.config/conky/images/flatALlogo.png -s 100x100 -p 50,0}
-${image $HOME/.config/conky/images/archmerge-200x200.png -s 130x130 -p 90,0}
+${image $HOME/.config/conky/images/archmerge-white-200x200.png -s 200x200 -p 50,0}
+
+
+
+
 
 
 

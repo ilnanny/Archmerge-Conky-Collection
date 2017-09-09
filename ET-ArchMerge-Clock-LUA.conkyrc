@@ -138,5 +138,5 @@ conky.config = {
 };
 
 conky.text = [[
-${image ~/.config/conky/images/archmerge-100x100.png -s 78x78 -p 61,61}
+${image ~/.config/conky/images/archmerge-white-100x100.png -s 70x70 -p 65,60}
 ]];
