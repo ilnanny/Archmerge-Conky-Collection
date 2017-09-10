@@ -1,1 +1,2 @@
-conky -c ~/.conkyrc & sleep 1s
+conky -c ~/.config/conky/AM-logos.conkyrc & sleep 1s
+conky -c ~/.config/conky/AUR-Acros.conkyrc & sleep 1s
