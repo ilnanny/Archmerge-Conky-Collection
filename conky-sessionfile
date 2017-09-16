@@ -1,1 +1,1 @@
-conky -c ~/.config/conky/AUR-ArchMerge.conkyrc
+conky -c /home/erik/.config/conky/AUR-Nemesis.conkyrc & sleep 1s
