@@ -8,5 +8,5 @@
 #
 ##################################################################################################################
 
-find .  -name "*.conkyrc" -type f -exec sed -i  	's/v2.5.3/v3.0.0/g' {} \;
-find .  -name "*.conkyrc" -type f -exec sed -i  	's/21\/07\/2017/09\/09\/2017/g' {} \;
+find .  -name "*.conkyrc" -type f -exec sed -i  	's/v3.0.0/v3.0.1/g' {} \;
+find .  -name "*.conkyrc" -type f -exec sed -i  	's/09\/09\/2017/18\/09\/2017/g' {} \;

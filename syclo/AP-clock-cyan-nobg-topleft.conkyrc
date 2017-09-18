@@ -1,14 +1,14 @@
 --[[
 #=====================================================================================
 #                               
-# Date    : 09/09/2017
+# Date    : 18/09/2017
 # name    : syclo conky (Simple System Info And Clock)
 # Author  : Adhi Pambudi
 #           https://plus.google.com/+AdhiPambudi
 #           http://addy-dclxvi.deviantart.com/
 # Github  : https://github.com/zagortenay333/conky-Vision
 # Editor  : Erik Dubois
-# Version : v3.0.0
+# Version : v3.0.1
 # License : Distributed under the terms of GNU GPL version 2 or later
 #=====================================================================================
 # CONKY
