@@ -1,1 +1,1 @@
-conky -c ~/.config/conky/AUR-ArchMerge.conkyrc & sleep 1s
+conky -c ~/.config/conky/AUR-ArchMerge.conkyrc
