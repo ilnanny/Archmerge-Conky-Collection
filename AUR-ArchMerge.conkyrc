@@ -141,36 +141,33 @@ ${color1}${font SourceSansPro-ExtraLight:size=18:weight:bold}${color2}${execi 60
 ${color1}${hr 2}
 ${voffset -10}${color1}${font SourceSansPro-ExtraLight:size=10:weight:bold:italic}${color6}$sysname $kernel ${alignr}${execi 6000 lsb_release -a | grep 'Release'|awk {'print $2""$3""$4""$5'}}${color}
 ${color1}${font SourceSansPro-ExtraLight:size=12:weight:bold}Uptime ${alignr}${color6} $uptime
-${color1}${font SourceSansPro-ExtraLight:size=12:weight:bold}Cpu Temp ${alignr}${color6}${execi 10 sensors | grep 'Core 0' | awk {'print $3'}}
-${color1}${color1}Cpu Freq ${alignr}${color6}${freq_g} Ghz
-${color1}${cpubar cpu0 10,150}${color1} Cpu ${alignr}${if_match ${cpu cpu0} > 80}${color9}${else}${if_match ${cpu cpu0} > 50}${color8}${else}${color6}${endif}${endif}${cpu cpu0}%
+${color1}SSD${alignr}${color6}${fs_free}${color} of ${color6}${fs_size}${color}
 ${if_existing /proc/acpi/battery/BAT0/info}${if_match ${battery_percent BAT0} <= 20}${color3}${battery_bar 10,150 BAT0} Battery${alignr}${color7}${battery_percent BAT0}%${else}${color1}${battery_bar 10,150 BAT0} Battery${alignr}${color1}${battery_percent BAT0}%${endif}${else}${voffset -20}${endif}
-${color1}${membar 10,150} Mem ${alignr}${if_match ${memperc} > 80}${color9}${else}${color6}${endif}${color6}${memperc}%
-${color1}${fs_bar 10,120}${alignr}${color6}${fs_free}${color} of${color6} ${fs_size}${color}
-${color1}Total Processes${alignr}${color6}${processes}
 ${color1}Packages Upgrades${alignr}${color6}${execi 3600 checkupdates | wc -l} 
+#${color1}${font SourceSansPro-ExtraLight:size=12:weight:bold}Cpu Temp ${alignr}${color6}${execi 10 sensors | grep 'Core 0' | awk {'print $3'}}
 ${color1}${hr 2}
-${font SourceSansPro-ExtraLight size=12:weight:bold}${color1}Cpu  
+${font SourceSansPro-ExtraLight size=12:weight:bold}${color1}Cpu 
 ${font SourceSansPro-ExtraLight size=8:weight:italic}${color6}${execi 6000 cat /proc/cpuinfo | grep -i 'Model name' -m 1 | cut -c14-43}${font}
+${color1}${cpugraph 40,230 FFA300 FFA300  -t}
 ${offset 30}${font SourceSansPro-ExtraLight:size=12:weight:bold}${color4}${top name 1}${alignr}${color6}${top cpu 1}%${font}
 ${offset 30}${color1}${top name 2}${alignr}${color6}${top cpu 2}%
 ${offset 30}${color1}${top name 3}${alignr}${color6}${top cpu 3}%
 ${offset 30}${color1}${top name 4}${alignr}${color6}${top cpu 4}%
 ${offset 30}${color1}${top name 5}${alignr}${color6}${top cpu 5}%
 ${offset 30}${color1}${top name 6}${alignr}${color6}${top cpu 6}%
-${font SourceSansPro-ExtraLight size=12 weight:bold}${color1}CPU Usage over Time
-${color1}${cpugraph 40,230 FFA300 ffffff  -t}
-${hr 2}${font}${color}
+${color1}${color1}Cpu Freq ${alignr}${color6}${freq_g} Ghz
+${font SourceSansPro-ExtraLight size=12 weight:bold}${color1}CPU Usage${alignr}${if_match ${cpu cpu0} > 80}${color9}${else}${if_match ${cpu cpu0} > 50}${color8}${else}${color6}${endif}${endif}${cpu cpu0}%
+${color1}${hr 2}${font}${color}
 ${color5}${font SourceSansPro-ExtraLight:size=12:weight:bold}Memory
+${color1}${memgraph 40,230 FFA300 FFA300  -t}
 ${offset 30}${font SourceSansPro-ExtraLight:size=12:weight:bold}${color4}${top_mem name 1}${alignr}${alignr}${color6}${top_mem mem 1}${font}
 ${offset 30}${color1}${top_mem name 2}${alignr}${alignr}${color6}${top_mem mem 2}
 ${offset 30}${color1}${top_mem name 3}${alignr}${alignr}${color6}${top_mem mem 3}
 ${offset 30}${color1}${top_mem name 4}${alignr}${alignr}${color6}${top_mem mem 4}
 ${offset 30}${color1}${top_mem name 5}${alignr}${alignr}${color6}${top_mem mem 5}
 ${offset 30}${color1}${top_mem name 6}${alignr}${alignr}${color6}${top_mem mem 6}
+${offset 0}${color1}Memory Percentage ${alignr}${color6}${memperc}%
 ${offset 0}${color1}${color1}Memory used${alignr}${color6}${mem}
 ${offset 0}${color1}Total Memory${alignr}${color6}${memmax}
-${color1}${hr 2}
-${alignc}A R C H M E R G E   N E M E S I S
 ${color1}${hr 2}
 ]]
