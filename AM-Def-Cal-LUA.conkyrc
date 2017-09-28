@@ -1,12 +1,12 @@
 --[[
 #=====================================================================================
 #                               ArchMerge
-# Date    : 18/09/2017
+# Date    : 28/09/2017
 # Source  : BunsenLabs smacz betatester
 # converted to conky 1.10 syntax for ArchMerge by: postmaster and Erik Dubois
 # original config borrowed from BunsenLabs with love
 # Editor  : Erik Dubois at http://www.erikdubois.be
-# Version : v3.0.1
+# Version : v3.0.2
 # License : Distributed under the terms of GNU GPL version 2 or later
 # Documentation : http://erikdubois.be
 #======================================================================================
