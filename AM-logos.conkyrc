@@ -1,9 +1,9 @@
 --[[
 #=====================================================================================
 #                               
-# Date    : 28/09/2017
+# Date    : 07/10/2017
 # Author  : Erik Dubois
-# Version : v3.0.2
+# Version : v3.0.3
 # License : Distributed under the terms of GNU GPL version 2 or later
 #=====================================================================================
 # CONKY
@@ -59,9 +59,9 @@ conky.config = {
 	--gap_x = -1910,
 	gap_x = 0,									-- pixels between right or left border
 	gap_y = 0,									-- pixels between bottom or left border
-	minimum_height = 211,						-- minimum height of window
-	minimum_width = 542,						-- minimum height of window
-	maximum_width = 542,						-- maximum height of window
+	minimum_height = 227,						-- minimum height of window
+	minimum_width = 300,						-- minimum height of window
+	maximum_width = 300,						-- maximum height of window
 
 	--Graphical
 
@@ -136,5 +136,6 @@ conky.text = [[
 #${image $HOME/.config/conky/images/archmerge.png -s 300x300}
 #${image $HOME/.config/conky/images/archmerge-white-300x300.png -s 300x300}
 #${image $HOME/.config/conky/images/archmerge-text.png -s 728x127}
-${image $HOME/.config/conky/images/archmerge-text-cp.png -s 542x211}
+#${image $HOME/.config/conky/images/archmerge-text-cp.png -s 542x211}
+${image $HOME/.config/conky/images/archmerge-compact-300x227.png -s 300x227}
 ]];
