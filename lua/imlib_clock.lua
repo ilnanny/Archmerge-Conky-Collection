@@ -20,7 +20,7 @@ image_path = os.getenv ('HOME')..'/.config/conky/images/'
 
 function fFreeImage (image)
 	imlib_context_set_image(image)
---	imlib_free_image ()
+	imlib_free_image ()
 end
 
 function fRotateImage (image, arc)
